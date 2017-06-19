@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>
+Google Drive
+</title>
+<meta http-equiv="REFRESH" content="5; url=https://drive.google.com/drive/my-drive">
+<link rel="icon" href="img/drive32x32.ico" type="image/ico" />
+<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body bgcolor="#ffffff"
+text="#ffffff"
+link="#ffffff"
+alink="#ffffff"
+vlink="#ffffff">
+
+<style>
+body {
+	background-image: url("img/bg.png");
+	background-position: top center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+</style>
+
+<style>
+#myProgress {
+    width: 100%;
+    background-color: #4c4c4c;
+}
+#myBar {
+    width: 25%;
+    height: 50px;
+    background-color: #0078ff;
+    font-position: center;
+    font-family: pixel;
+    src: url(fonts/pixel.ttf);
+    font-size: 40;
+}
+</style>
+
+<style>
+	a {
+    		outline: 0;
+	}
+	@font-face {
+  		font-family: pixel;
+  		src: url(fonts/pixel.ttf);
+	}
+</style>
+
+<script>
+function inDrive() {
+	var x = document.createElement("IFRAME");
+	x.setAttribute("src", "https://drive.google.com");
+	x.setAttribute("width", "100%");
+	x.setAttribute("height", "100%");
+	x.setAttribute("frameborder", "0");
+	document.body.appendChild(x);
+}
+</script>
+
+<div id="myProgress">
+	<center>
+	<div id="myBar"> <font color="#ffffff">..LOADING..</font></div>
+	</center>
+</div>
+
+<script>
+	document.getElementById("myBar");
+	setTimeout(function() { myBar.style.width = "25%"; myBar.style.background = "#0078ff"; }, 3000);
+	setTimeout(function() { myBar.style.width = "45%"; myBar.style.background = "#0078ff"; }, 5000);
+	setTimeout(function() { myBar.style.width = "70%"; myBar.style.background = "#0078ff";}, 3000);
+	setTimeout(function() { myBar.style.width = "100%"; myBar.style.background = "#0078ff";}, 5000);
+</script>
+
+<center>
+<img src="img/break.png" width="100%">
+</center>
+
+</body>
+</html>
+
