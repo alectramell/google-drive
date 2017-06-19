@@ -22,8 +22,8 @@ clear
 echo "[Desktop Entry]" > /home/$(whoami)/Desktop/google-drive.desktop
 echo "Name=Google Drive" >> /home/$(whoami)/Desktop/google-drive.desktop
 echo "Type=Application" >> /home/$(whoami)/Desktop/google-drive.desktop
-echo "Icon=/home//Desktop/google-drive/img/drive.svg" >> /home/$(whoami)/Desktop/google-drive.desktop
-echo "Exec=sesible-browser --new-tab='file:///home/$(whoami)/Desktop/google-drive/index.html'" >> /home/$(whoami)/Desktop/google-drive.desktop
+echo "Icon=/home/$(whoami)/Desktop/google-drive/img/drive.svg" >> /home/$(whoami)/Desktop/google-drive.desktop
+echo "Exec=sensible-browser --new-tab='file:///home/$(whoami)/Desktop/google-drive/index.html'" >> /home/$(whoami)/Desktop/google-drive.desktop
 echo "Terminal=false" >> /home/$(whoami)/Desktop/google-drive.desktop
 
 clear
